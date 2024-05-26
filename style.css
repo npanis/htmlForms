@@ -1,0 +1,35 @@
+h2, p, label {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.htmlForm {
+    display: flex;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 2em;
+  }
+
+.formMessage, .contactInfo {
+    margin-right: 2em; 
+    display: flex;
+    flex-direction: column;
+}
+
+.formMessage > textarea, .contactInfo {
+    flex: 1; 
+    min-width: 18em;
+   }
+
+/* Mobile Size */
+.htmlForm {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+/* Desktop Size */
+@media all and (min-width: 800px) {
+
+    .htmlForm {
+      flex-direction: column;
+    }
+  }
